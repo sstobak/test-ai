@@ -6,18 +6,18 @@ import './App.css';
 function App() {
   return (
     <>
-      <h1>Animal SVG Gallery</h1>
-      <div className="gallery">
-        <div className="animal">
-          <img src={chicken} alt="Chicken" />
+      <h1 id="gallery-title">Animal SVG Gallery</h1>
+      <div className="gallery" role="list" aria-labelledby="gallery-title">
+        <div className="animal" role="listitem" tabIndex={0} aria-label="Chicken">
+          <img src={chicken} alt="Chicken illustration" tabIndex={-1} />
           <div>Chicken</div>
         </div>
-        <div className="animal">
-          <img src={cow} alt="Cow" />
+        <div className="animal" role="listitem" tabIndex={0} aria-label="Cow">
+          <img src={cow} alt="Cow illustration" tabIndex={-1} />
           <div>Cow</div>
         </div>
-        <div className="animal">
-          <img src={pig} alt="Pig" />
+        <div className="animal" role="listitem" tabIndex={0} aria-label="Pig">
+          <img src={pig} alt="Pig illustration" tabIndex={-1} />
           <div>Pig</div>
         </div>
       </div>
